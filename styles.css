@@ -8,8 +8,10 @@
     --title-color: hsl(179, 62%, 43%);
     --button-color: hsl(71, 73%, 54%);
     --first-paragraph: hsl(218, 22%, 67%);
-    --light-gray: hsl(218, 22%, 67%);
+    --light-gray: hsl(204, 43%, 93%);
     --bright-yellow: hsl(71, 73%, 54%);
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
 }
 
 
@@ -19,6 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: var(--light-gray);
 }
 
 body > .container {
@@ -35,14 +38,26 @@ main {
 
 h1 {
     color: var(--title-color);
+    font-size: 26px;
 }
+
+.section-one {
+    padding: 26px;
+    background-color: white;
+}
+
 
 section.section-one h2 {
     color: var(--button-color);
+    margin: 26px 0 15px 0;
+    font-size: 1rem;
+    max-width: 30ch;
 }
 
 section.section-one p {
     color: var(--first-paragraph);
+    max-width: 32ch;
+    line-height: 26px;
 }
 
 .section-two {
@@ -55,18 +70,56 @@ section > .left-side {
     background-color: var(--title-color);
     flex: 1;
     color: white;
+    padding: 26px;
+    height: auto;
 }
 
 section > .right-side {
     flex: 1;
-    background-color: var(--light-gray);
+    background-color: hsl(179, 47%, 52%);
+    max-width: 30ch;
     color: white;
+    padding: 26px;
+    height: auto;
+}
 
+.left-side > h2 {
+    margin-bottom: 16px;
 }
 
 button {
     background-color: var(--bright-yellow);
+    margin-top: 26px;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 1.2rem;
 }
+
+.paragraph-price {
+    color: var(--light-gray);
+    padding-bottom: 2px;
+    display: flex;
+    align-items: center;
+}
+
+span.dollar {
+    font-size: 40px;
+    display: inline;
+    margin-right: 12px;
+    color: white;
+    font-weight: 700;
+}
+
+.right-side > h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
