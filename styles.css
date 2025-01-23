@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --title-color: hsl(179, 62%, 43%);
+    --button-color: hsl(71, 73%, 54%);
+    --first-paragraph: hsl(218, 22%, 67%);
+    --light-gray: hsl(218, 22%, 67%);
+    --bright-yellow: hsl(71, 73%, 54%);
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: var(--title-color);
+}
+
+section.section-one h2 {
+    color: var(--button-color);
+}
+
+section.section-one p {
+    color: var(--first-paragraph);
+}
+
+.section-two {
+    display: flex;
+    flex-direction: column;
+}
+
+
+section > .left-side {
+    background-color: var(--title-color);
+    flex: 1;
+    color: white;
+}
+
+section > .right-side {
+    flex: 1;
+    background-color: var(--light-gray);
+    color: white;
+
+}
+
+button {
+    background-color: var(--bright-yellow);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
