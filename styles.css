@@ -25,6 +25,14 @@ body {
     background-color: var(--light-gray);
 }
 
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
 body > .container {
     display: flex;
     justify-content: center;
@@ -37,7 +45,8 @@ body > .container {
 main {
     display: flex;
     flex-direction: column;
-
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 h1 {
@@ -127,7 +136,40 @@ span.dollar {
     margin-bottom: 16px;
 }
 
+@media (min-width: 1440px) {
+    
+    section {
+        overflow: hidden;
+    }
 
+    main > .section-two > * {
+        font-weight: 100;
+    }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+    .section-two {
+        flex-direction: row;
+        height: auto;
+    }
+
+    main > .section-one > p {
+        max-width: 60ch;
+    }
+
+    main > .section-one > h2 {
+        max-width: 40ch;
+    }
+
+    .section-two > div {
+        width: 50%;
+        height: auto;
+        padding: 30px;
+    }
+
+    button {
+        padding: 14px;
+        font-weight: lighter;
+        font-size: 1rem;
+    }
+
+}
+
